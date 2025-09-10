@@ -96,6 +96,19 @@ def salva_su_file(lista_spesa):
     print("Spese salvate su file.")
 
 
+def importo_massimo(lista_spesa):
+    if not lista_spesa:
+        return 0
+    return max(spesa["importo"] for spesa in lista_spesa)
+
+
+def spesa_massima(lista_spesa):
+    if not lista_spesa:
+        return None
+    return max(lista_spesa, key=lambda spesa: spesa["importo"])
+
+
+
 def main():
     lista_spesa = carica_da_file()
 
