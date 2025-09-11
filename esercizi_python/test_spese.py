@@ -1,4 +1,5 @@
-from esercizio import *
+import pytest
+from esercizi_python.esercizio import *
 
 def test_calcolo_totale():
     lista_mock = [
@@ -44,3 +45,17 @@ def test_spesa_massima_lista_vuota():
     lista_mock = []
     risultato = spesa_massima(lista_mock)
     assert risultato is None
+
+@pytest.fixture
+def lista_mock_spese():
+    return [
+        {"descrizione": "pane", "importo": 4},
+        {"descrizione": "latte", "importo": 2},
+        {"descrizione": "caffè", "importo": 4}
+    ]
+
+def test_calcolo_totale_fixture(lista_mock_spese):
+    assert calcolo_totale(lista_mock_spese) == 10
+
+def test_calcolo_media_fixture(lista_mock_spese):
+    assert calcolo_media(lista_mock_spese) == 10 / 3
