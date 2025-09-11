@@ -1,4 +1,4 @@
-name: Esegui i test Python
+name: Esegui i test Python 2
 
 on: [push, pull_request]
 
