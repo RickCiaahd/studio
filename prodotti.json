@@ -1,0 +1,14 @@
+[
+    {
+        "prodotto": "biscotti",
+        "prezzo": 2.5
+    },
+    {
+        "prodotto": "yogurt",
+        "prezzo": 1.3
+    },
+    {
+        "prodotto": "miele",
+        "prezzo": 4.0
+    }
+]

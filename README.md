@@ -1,1 +1,1 @@
-# Studio
+![Test](https://github.com/RickCiaahd/studio/actions/workflows/tests.yml/badge.svg)

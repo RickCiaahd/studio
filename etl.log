@@ -1,0 +1,4 @@
+2025-09-16 16:24:28,359 [INFO] Avvio ETL: prodotti.csv → prodotti_filtrati.json
+2025-09-16 16:24:28,361 [WARNING] Riga scartata: {'prodotto': 'latte', 'prezzo': '-3.0'} → Prezzo negativo
+2025-09-16 16:24:28,362 [WARNING] Riga scartata: {'prodotto': 'caffè', 'prezzo': 'testo'} → could not convert string to float: 'testo'
+2025-09-16 16:24:28,362 [INFO] Salvati 2 elementi in prodotti_filtrati.json
