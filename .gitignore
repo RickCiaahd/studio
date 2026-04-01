@@ -7,6 +7,9 @@ __pycache__/
 *.pyc
 .env
 venv/
+etl.log
+.pytest_cache/
+.coverage
 
 # Node.js
 node_modules/
@@ -14,3 +17,7 @@ node_modules/
 # IDE
 .vscode/
 .idea/
+
+#FILES
+dati_clean.json
+dati_report.json

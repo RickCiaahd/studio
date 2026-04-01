@@ -1,4 +1,4 @@
-from esercizi_python.etl_modulare import valida_prezzo_positivo
+from progetto_etl.etl.pipeline import valida_prezzo_positivo
 
 
 def test_valida_prezzo_valido():

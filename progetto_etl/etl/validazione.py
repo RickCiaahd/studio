@@ -2,6 +2,7 @@ import csv
 import json
 import logging
 
+# Imposta il logging
 logging.basicConfig(
     filename="etl.log",
     level=logging.INFO,
@@ -9,7 +10,7 @@ logging.basicConfig(
 )
 
 
-def valida_prezzo_positivo(riga):
+def valida_riga(riga):
     try:
         prodotto = riga["prodotto"].strip()
         prezzo = float(riga["prezzo"])
@@ -21,29 +22,23 @@ def valida_prezzo_positivo(riga):
         return None
 
 
-def estrai_e_valida(nome_file, validatore):
-    validi = []
-    with open(nome_file, "r", encoding="utf-8") as file:
+def estrai_e_valida(nome_file_csv):
+    prodotti_validi = []
+    with open(nome_file_csv, "r", encoding="utf-8") as file:
         reader = csv.DictReader(file)
         for riga in reader:
-            prodotto = validatore(riga)
-            if prodotto:
-                validi.append(prodotto)
-    return validi
-
+            prodotto_valido = valida_riga(riga)
+            if prodotto_valido:
+                prodotti_validi.append(prodotto_valido)
+    return prodotti_validi
 
 def carica_su_json(nome_file, dati):
     with open(nome_file, "w", encoding="utf-8") as f:
         json.dump(dati, f, indent=4, ensure_ascii=False)
-    logging.info(f"Salvati {len(dati)} elementi in {nome_file}")
-
-
-def esegui_etl(file_input, file_output, validatore):
-    logging.info(f"Avvio ETL: {file_input} → {file_output}")
-    dati_validi = estrai_e_valida(file_input, validatore)
-    carica_su_json(file_output, dati_validi)
-    print("ETL completato.")
+    logging.info(f"Salvati {len(dati)} prodotti in {nome_file}")
 
 
 if __name__ == "__main__":
-    esegui_etl("prodotti.csv", "prodotti_filtrati.json", valida_prezzo_positivo)
+    dati = estrai_e_valida("prodotti.csv")
+    carica_su_json("prodotti_validati.json", dati)
+    print("ETL completato. Controlla etl.log.")
