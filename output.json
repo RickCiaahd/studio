@@ -1,0 +1,152 @@
+[
+  {
+    "title": "Essence Mascara Lash Princess",
+    "price": 9.99,
+    "category": "beauty"
+  },
+  {
+    "title": "Eyeshadow Palette with Mirror",
+    "price": 19.99,
+    "category": "beauty"
+  },
+  {
+    "title": "Powder Canister",
+    "price": 14.99,
+    "category": "beauty"
+  },
+  {
+    "title": "Red Lipstick",
+    "price": 12.99,
+    "category": "beauty"
+  },
+  {
+    "title": "Red Nail Polish",
+    "price": 8.99,
+    "category": "beauty"
+  },
+  {
+    "title": "Calvin Klein CK One",
+    "price": 49.99,
+    "category": "fragrances"
+  },
+  {
+    "title": "Chanel Coco Noir Eau De",
+    "price": 129.99,
+    "category": "fragrances"
+  },
+  {
+    "title": "Dior J'adore",
+    "price": 89.99,
+    "category": "fragrances"
+  },
+  {
+    "title": "Dolce Shine Eau de",
+    "price": 69.99,
+    "category": "fragrances"
+  },
+  {
+    "title": "Gucci Bloom Eau de",
+    "price": 79.99,
+    "category": "fragrances"
+  },
+  {
+    "title": "Annibale Colombo Bed",
+    "price": 1899.99,
+    "category": "furniture"
+  },
+  {
+    "title": "Annibale Colombo Sofa",
+    "price": 2499.99,
+    "category": "furniture"
+  },
+  {
+    "title": "Bedside Table African Cherry",
+    "price": 299.99,
+    "category": "furniture"
+  },
+  {
+    "title": "Knoll Saarinen Executive Conference Chair",
+    "price": 499.99,
+    "category": "furniture"
+  },
+  {
+    "title": "Wooden Bathroom Sink With Mirror",
+    "price": 799.99,
+    "category": "furniture"
+  },
+  {
+    "title": "Apple",
+    "price": 1.99,
+    "category": "groceries"
+  },
+  {
+    "title": "Beef Steak",
+    "price": 12.99,
+    "category": "groceries"
+  },
+  {
+    "title": "Cat Food",
+    "price": 8.99,
+    "category": "groceries"
+  },
+  {
+    "title": "Chicken Meat",
+    "price": 9.99,
+    "category": "groceries"
+  },
+  {
+    "title": "Cooking Oil",
+    "price": 4.99,
+    "category": "groceries"
+  },
+  {
+    "title": "Cucumber",
+    "price": 1.49,
+    "category": "groceries"
+  },
+  {
+    "title": "Dog Food",
+    "price": 10.99,
+    "category": "groceries"
+  },
+  {
+    "title": "Eggs",
+    "price": 2.99,
+    "category": "groceries"
+  },
+  {
+    "title": "Fish Steak",
+    "price": 14.99,
+    "category": "groceries"
+  },
+  {
+    "title": "Green Bell Pepper",
+    "price": 1.29,
+    "category": "groceries"
+  },
+  {
+    "title": "Green Chili Pepper",
+    "price": 0.99,
+    "category": "groceries"
+  },
+  {
+    "title": "Honey Jar",
+    "price": 6.99,
+    "category": "groceries"
+  },
+  {
+    "title": "Ice Cream",
+    "price": 5.49,
+    "category": "groceries"
+  },
+  {
+    "title": "Juice",
+    "price": 3.99,
+    "category": "groceries"
+  },
+  {
+    "title": "Kiwi",
+    "price": 2.49,
+    "category": "groceries"
+  }
+]
