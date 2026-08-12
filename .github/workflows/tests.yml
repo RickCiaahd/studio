@@ -1,24 +1,26 @@
-name: Esegui i test Python 2
+name: Python tests
 
-on: [push, pull_request]
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
 
 jobs:
   test:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout del codice
+      - name: Check out repository
         uses: actions/checkout@v4
-
-      - name: Setup Python
+      - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: "3.10"
-
-      - name: Installazione dipendenze
+          python-version: "3.11"
+          cache: pip
+      - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install pytest
-
-      - name: Esecuzione dei test
+          pip install -r requirements.txt pytest
+      - name: Run tests
         run: pytest
