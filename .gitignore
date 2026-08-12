@@ -1,6 +1,5 @@
 # Environment and secrets
 .env
-
 # Python
 .venv/
 venv/
@@ -9,14 +8,12 @@ __pycache__/
 .pytest_cache/
 .coverage
 htmlcov/
-
 # Generated output
 *.log
 output.json
 airflow_home/
 logs/
 plugins/
-
 # Editors and operating systems
 .vscode/
 .idea/
