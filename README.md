@@ -1,6 +1,6 @@
 # Data Engineering Lab
 
-[![Python tests](https://github.com/RickCiaahd/studio/actions/workflows/tests.yml/badge.svg)](https://github.com/RickCiaahd/studio/actions/workflows/tests.yml)
+[![Python tests](https://github.com/RickCiaahd/data-engineering-lab/actions/workflows/tests.yml/badge.svg)](https://github.com/RickCiaahd/data-engineering-lab/actions/workflows/tests.yml)
 
 Personal hands-on project focused on modern data engineering concepts and tools. It demonstrates a small, understandable data pipeline rather than a production system.
 
@@ -65,8 +65,8 @@ The current load is append-only. Re-running the pipeline inserts another snapsho
 Clone the repository and enter it:
 
 ```bash
-git clone https://github.com/RickCiaahd/studio.git
-cd studio
+git clone https://github.com/RickCiaahd/data-engineering-lab.git
+cd data-engineering-lab
 ```
 
 Create your local configuration:
